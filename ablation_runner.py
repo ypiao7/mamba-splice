@@ -47,10 +47,10 @@ EXPAND = 2
 #    True  -> epoch 1개, train/eval 배치 수 제한 (7조합 감 잡기용, 몇 분 내로 끝남)
 #    False -> config.py의 EPOCHS 그대로, 배치 제한 없음 (진짜 본 실험용)
 # =========================================================
-QUICK_SCREEN = False
+QUICK_SCREEN = True
 QUICK_SCREEN_EPOCHS = 1
-QUICK_SCREEN_MAX_TRAIN_BATCHES = 50
-QUICK_SCREEN_MAX_EVAL_BATCHES = 20
+QUICK_SCREEN_MAX_TRAIN_BATCHES = 4000
+QUICK_SCREEN_MAX_EVAL_BATCHES = 500
 
 MAX_TRAIN_BATCHES = QUICK_SCREEN_MAX_TRAIN_BATCHES if QUICK_SCREEN else 0
 MAX_EVAL_BATCHES = QUICK_SCREEN_MAX_EVAL_BATCHES if QUICK_SCREEN else 0
